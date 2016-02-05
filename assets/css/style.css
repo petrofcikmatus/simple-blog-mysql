@@ -1,0 +1,216 @@
+*, *:before, *:after {
+    outline: none;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html, body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    color: #252525;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #252525;
+    text-decoration: none;
+}
+
+/* clearfix */
+.group:before,
+.group:after {
+    content: '';
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* plávanie */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-width-300px {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.extra-padding {
+    padding: 10px 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* navigation */
+nav {
+    background-color: #252525;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* message */
+.message {
+    padding: 5px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    background-color: #2984ff;
+    font-weight: bold;
+}
+
+/* content */
+.content {
+    margin: 30px 0;
+    padding: 0;
+}
+
+.post {
+    border-bottom: 1px solid lightgrey;
+}
+.post:last-of-type {
+    border: none;
+}
+.post .post-info {
+    color: #404040;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.post .post-image {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.post .post-image img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.post .post-teaser,
+.post .post-text {
+    margin: 10px 0;
+    text-align: justify;
+}
+.post .post-tags {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.post .post-action {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+.link-tag {
+
+    border-radius: 3px;
+}
+.link-delete {
+    color: red;
+}
+.link-edit {
+    color: #2984ff;
+}
+
+input[type=text],
+input[type=submit],
+input[type=email],
+input[type=password],
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin: 5px auto 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+input[type=text],
+input[type=submit],
+input[type=email],
+input[type=password] {
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+input[type=submit]{
+    background-color: #2984ff;
+    color: white;
+    cursor: pointer;
+    border-color: #2984ff;
+    font-weight: bold;
+}
+
+input[type=checkbox]{
+    vertical-align: bottom;
+}
+
+textarea {
+    padding: 5px;
+    line-height: 18px;
+    resize: vertical;
+    height: 300px;
+    min-height: 100px;
+}
