@@ -18,10 +18,10 @@ define('IMAGE_DIRECTORY', 'assets/images');
 // nastavenia pre databázu
 $database = array(
     "host"     => "localhost",
-    "port"     => "5432",
+    "port"     => "3306",
     "dbname"   => "test",
-    "user"     => "postgres",
-    "password" => "postgres",
+    "user"     => "root",
+    "password" => "root",
     "settings" => array(
         PDO::ATTR_ERRMODE          => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_EMULATE_PREPARES => false
@@ -31,7 +31,7 @@ $database = array(
 // pripojenie na databázu http://php.net/manual/en/pdo.connections.php
 try {
     $db = new PDO(
-        "pgsql:host=${database["host"]};port=${database["port"]};dbname=${database["dbname"]};",
+        "mysql:host=${database["host"]};port=${database["port"]};dbname=${database["dbname"]};",
         $database["user"],
         $database["password"],
         $database["settings"]
